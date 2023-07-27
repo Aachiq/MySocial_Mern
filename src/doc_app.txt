@@ -1,0 +1,28 @@
+---------------> API is Routes :
+# USER ROUTES :
+    router.get("/find/:userId", getUser)
+    router.put("/", updateUser)
+# AUTH ROUTES :
+    router.post("/login", login)
+    router.post("/register", register)
+    router.post("/logout", logout)
+# POST ROUTES :
+    router.get("/", getPosts);
+    router.post("/", addPost);
+    router.delete("/:id", deletePost);
+# COMMENT ROUTES :
+    router.get("/", getComments);
+    router.post("/", addComment);
+    router.delete("/:id", deleteComment);
+# LIKE ROUTES :
+    router.get("/", getLikes)
+    router.post("/", addLike)
+    router.delete("/", deleteLike)
+# RELATIONSHIP ROUTES :
+    router.get("/", getRelationships)
+    router.post("/", addRelationship)
+    router.delete("/", deleteRelationship)
+# STORY ROUTES :
+    router.get("/", getStories);
+    router.post("/", addStory);
+    router.delete("/:id", deleteStory);
